@@ -1,0 +1,77 @@
+{
+  "title": "Getting Started with ozone",
+  "description": "Start an Hadoop cluster with docker-compose",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Start up the cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Check the running components",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Check the web ui of the SCM server",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Create a new volume",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Create a new bucket",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Upload a new key",
+        "text": "step6.md"
+      },
+      {
+        "title": "Step 7 - Check the key object",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yaml",
+          "target": "~/"
+        },
+        {
+          "file": "conf/*",
+          "target": "~/conf"
+        },
+        {
+          "file": "Dockerfile.hadoop",
+          "target": "~/"
+        },
+        {
+          "file": "Dockerfile.hive",
+          "target": "~/"
+        },
+        {
+          "file": "entrypoint.sh",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "Hello World"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
